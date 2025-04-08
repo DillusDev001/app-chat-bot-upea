@@ -21,7 +21,10 @@
     "http-status-codes": "^2.3.0",
     "libphonenumber-js": "^1.12.6",
     "punycode": "^2.3.1",
-    "tslib": "^2.8.1"
+    "reflect-metadata": "^0.2.2",
+    "sqlite3": "^5.1.7",
+    "tslib": "^2.8.1",
+    "typeorm": "^0.3.22"
   },
   "devDependencies": {
     "@rollup/plugin-json": "^6.1.0",

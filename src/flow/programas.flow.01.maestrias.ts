@@ -5,7 +5,7 @@ import { BaileysProvider } from '@builderbot/provider-baileys';
 import { textNivel2 } from './text.common';
 
 const textAnswer = [
-    'En la UPEA, ofrecemos diversas *Maestrías* 📚 en áreas clave.',
+    'En la UPEA, te ofrecemos diversas *Maestrías* 📚 en áreas clave.',
     '',
     '🔵 Maestría en Administración de Empresas (MBA) 💼',
     '🔵 Maestría en Derecho ⚖️',

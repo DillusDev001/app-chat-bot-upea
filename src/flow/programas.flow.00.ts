@@ -11,14 +11,14 @@ import { posDoctoradosFlow } from './programas.flow.04.posdoctorados';
 const textAnswer = [
     '*PROGRAMAS*.',
     '',
-    'En la UPEA, ofrecemos una variedad de programas de posgrado. 🎓',
+    'En la UPEA, te ofrecemos una variedad de programas de posgrado. 🎓',
     '',
     '🎓¿Te gustaría saber más sobre alguno de los siguientes programas?🎓',
     '',
     '1️⃣ Maestrías  📚.',
     '2️⃣ Doctorados 📘.',
     '3️⃣ Diplomados 🏅.',
-    '4️⃣ PosDoctorado 🧠🔬.',
+    '4️⃣ PosDoctorados 🧠🔬.',
     '',
     textNivel0.toString()
 ]

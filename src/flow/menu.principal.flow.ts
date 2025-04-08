@@ -9,9 +9,9 @@ import { fechasFlow } from './fechas.flow';
 const textAnswer = [
     'Aquí tienes algunas opciones para continuar:',
     '',
-    '1️⃣ 📚 Información sobre programas de Posgrado.',
-    '2️⃣ 📝 Requisitos para la admisión.',
-    '3️⃣ 📅 Horarios y fechas importantes',
+    '1️⃣ 📚 Información programas Posgrado.',
+    '2️⃣ 📝 Requisitos de admisión.',
+    '3️⃣ 📅 Horarios y fechas relevantes',
     '4️⃣ 🔍 Ver el estado de tu inscripción y detalles personales.',
     '',
     '¿Comó deseas continuar? ➜'
