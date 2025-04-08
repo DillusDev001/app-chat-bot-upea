@@ -1,0 +1,105 @@
+[
+  {
+    "ref": "ans_02b521a9-78f3-4ca8-93d3-8ac3fcb838ec",
+    "keyword": "key_a854bdc3-fe4f-4969-9ef1-972bcc6f469f",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "ab0414d0930ad61d4bdf2eb2427b7281",
+    "from": "59177589551"
+  },
+  {
+    "ref": "e7c38d6f-8100-4eb1-8b8a-cc1f9890baf0",
+    "keyword": null,
+    "answer": "Hola *Junior* 👋.\nBienvenido(a) a *UPEA Posgrado*.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "59177589551",
+    "refSerialize": "d44a1d91c2fa5838060d314e6131b3af"
+  },
+  {
+    "ref": "ans_dfc7e4ec-d55c-498c-9159-a64113b88764",
+    "keyword": "ans_02b521a9-78f3-4ca8-93d3-8ac3fcb838ec",
+    "answer": "¿En qué puedo ayudarte hoy?\n\nAquí tienes algunas opciones para continuar:\n1️⃣ 📚 Información sobre programas de posgrado.\n2️⃣ 📝 Requisitos para la admisión.\n3️⃣ 📅 Horarios y fechas importantes\n4️⃣ 🔍 Ver el estado de tu inscripción y detalles personales.",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 900,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "0bdef96ed82a43afc69e0aa166d118c8",
+    "from": "59177589551"
+  },
+  {
+    "ref": "ans_01fda4a3-00ff-4ae7-a46b-def1223d73ea",
+    "keyword": "ans_dfc7e4ec-d55c-498c-9159-a64113b88764",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 900,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "b8edc51131c69487b49ca98539d7bdcd",
+    "from": "59177589551"
+  },
+  {
+    "ref": "4e140ed7-6d33-4ab6-8a3a-43fbd084d4e9",
+    "keyword": "b8edc51131c69487b49ca98539d7bdcd",
+    "answer": "1",
+    "options": {},
+    "from": "59177589551",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_2439eafa-a0b1-43b1-8ab7-68c2eb7662f0",
+    "keyword": "key_b3c1c422-0652-4ce4-b01a-bc5bcb73c26a",
+    "answer": "*PROGRAMAS*👋.\nEn la UPEA, ofrecemos una variedad de programas de posgrado. 🎓\n\n🎓¿Te gustaría saber más sobre alguno de los siguientes programas?🎓\n1️⃣ Maestrías  📚.\n2️⃣ Doctorados 📘.\n3️⃣ Diplomados 🏅.\n4️⃣ PosDoctorado 🧠🔬.\n\nSi deseas volver el ver el menú principal escribe *Menú*.",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 900,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "387ea6bde3ae5223fa7aba7d2c8df828",
+    "from": "59177589551"
+  },
+  {
+    "ref": "1dae2295-ed4a-4dae-aa04-7849b645a680",
+    "keyword": "387ea6bde3ae5223fa7aba7d2c8df828",
+    "answer": "1",
+    "options": {},
+    "from": "59177589551",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_8e8824b1-1ae9-430a-9f7f-045e905c4844",
+    "keyword": "key_0caeb932-eb7a-4f27-9992-7eb384dd0448",
+    "answer": "En la UPEA, ofrecemos diversas *Maestrías* en áreas clave.\n\nAlgunos ejemplos son:\n🔹 Maestría en Administración de Empresas (MBA) 💼\n🔹 Maestría en Derecho ⚖️\n🔹 Maestría en Educación 📚\n🔹 Maestría en Ingeniería 🔧\n\nRequisitos generales para Maestrías:\n🔹 Título universitario de licenciatura 🎓\n🔹 Experiencia laboral (según el programa) 💼\n🔹 Proceso de selección (examen, entrevista, etc.) 📝\n🔹 Otros requisitos específicos según el programa 📑\n\nPara más detalles sobre programas específicos o cómo inscribirte, puedes escribir *Asesor* para redirigirte aun asesor quien podrá despejar todas tus dudas.\nSi deseas volver el ver el menú de programas escribe *Programas*.\nSi deseas volver el ver el menú principal escribe *Menú*.",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 900,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "from": "59177589551"
+  }
+]

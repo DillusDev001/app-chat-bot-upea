@@ -1,13 +1,13 @@
 import { StatusCodes } from "http-status-codes";
 import { ApiResult } from "~/interfaces/api.result";
-import { getColegiaturas } from "../services/colegiatura.service";
+import { getColegiaturas } from "../firebase/services/colegiatura.service";
 
 type HandleCtx = (handler: (bot: any, req: any, res: any) => Promise<void>) => any;
 
 /**
  * 
  * @param number: number
- * @param mesage: string
+ * @param message: string
  * @param urlMedia: string
  * 
  */

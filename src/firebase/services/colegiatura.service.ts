@@ -1,10 +1,12 @@
-import { db } from "../../config/firebase/firebase.config";
+import { db } from "../firebase.config";
+
+const collection = 'colegiatura';
 
 const getColegiaturas = async () => {
     const data: any = [];
 
     // Obtener la colección 'participante' desde Firestore
-    const snapshot = await db.collection('colegiatura').get();
+    const snapshot = await db.collection(collection).get();
 
     snapshot.forEach((doc) => {
         const participante = doc.data();

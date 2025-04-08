@@ -13,11 +13,13 @@
   "keywords": [],
   "dependencies": {
     "@builderbot/bot": "1.2.5",
+    "@builderbot/database-json": "^1.2.5",
     "@builderbot/database-mysql": "1.2.5",
     "@builderbot/provider-baileys": "1.2.5",
     "dotenv": "^16.4.7",
     "firebase-admin": "^13.2.0",
     "http-status-codes": "^2.3.0",
+    "libphonenumber-js": "^1.12.6",
     "punycode": "^2.3.1",
     "tslib": "^2.8.1"
   },
