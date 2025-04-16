@@ -1,6 +1,6 @@
 import { StatusCodes } from "http-status-codes";
 import { ApiResult } from "~/interfaces/api.result";
-import { getColegiaturas } from "../firebase/services/colegiatura.service";
+import { getColegiaturas } from "../firebase/services/colegiatura.firebase.service";
 
 type HandleCtx = (handler: (bot: any, req: any, res: any) => Promise<void>) => any;
 

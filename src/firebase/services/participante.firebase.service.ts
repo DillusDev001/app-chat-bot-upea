@@ -1,6 +1,13 @@
+import { Participante } from "~/mysql/entity/participante.entity";
 import { db } from "../firebase.config";
+import { ParticipanteService } from "~/mysql/service/participante.service";
+import { Repository } from "typeorm";
+import { AppDataSource } from "~/mysql/data-source";
 
 const collection = 'participante';
+
+const participanteRepository = AppDataSource.getRepository(Participante);
+const participanteService = new ParticipanteService(participanteRepository);
 
 async function getParticipante(celular: string) {
     const colceccionRef = db.collection(collection);
@@ -9,8 +16,9 @@ async function getParticipante(celular: string) {
 
     if (snapshot.size === 1) {
         const doc = snapshot.docs[0]
+        await participanteService.createParticipante(doc.data());
         return doc.data();
-    }
+    } 
 
 
     return null;

@@ -7,6 +7,9 @@ import { textNivel0 } from './text.common';
 import { doctoradosFlow } from './programas.flow.02.doctorados';
 import { diplomadosFlow } from './programas.flow.03.diplomados';
 import { posDoctoradosFlow } from './programas.flow.04.posdoctorados';
+import { menuPrincipalFlow } from './menu.principal.flow';
+
+const menuKeywords = ['menu', 'menú', 'volver al menú', 'volver al menu', 'ir al menú', 'ir al menu'];
 
 const textAnswer = [
     '*PROGRAMAS*.',
@@ -29,7 +32,12 @@ export const programasFlow = addKeyword<BaileysProvider, IDatabase>(['programasF
         capture: true
     },
         async (ctx, { flowDynamic, gotoFlow, fallBack }) => {
+            ctx.vars = ctx.vars || {};
+
+            let intentos = 0;
+
             const userInput = parseInt(ctx.body, 10);
+            const userText = ctx.body.toString().toLowerCase();
 
             switch (userInput) {
                 case 1:
@@ -45,7 +53,21 @@ export const programasFlow = addKeyword<BaileysProvider, IDatabase>(['programasF
                     return gotoFlow(posDoctoradosFlow);
 
                 default:
-                    return fallBack('⚠️ ¡Debes ingresar una opción válida! ⚠️');
+                    if (!menuKeywords.includes(userText)) {
+                        intentos++;
+
+                        if (intentos <= 3) {
+                            console.log(intentos)
+                            return fallBack(`⚠️ Opción inválida (${intentos}/3). Inténtalo nuevamente.`);
+                        } else {
+                            ctx.vars.intentos = 0; // reiniciar contador si se redirige
+                            return gotoFlow(menuPrincipalFlow); // O puedes usar endFlow() si quieres terminar
+                        }
+
+                    } else {
+                        ctx.vars.intentos = 0;
+                        return gotoFlow(menuPrincipalFlow);
+                    }
             }
         }
     );

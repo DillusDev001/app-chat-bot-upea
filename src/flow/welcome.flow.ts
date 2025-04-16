@@ -7,7 +7,8 @@ import { requisitosFlow } from './requisitos.flow';
 import { fechasFlow } from './fechas.flow';
 import { menuPrincipalFlow } from './menu.principal.flow';
 import { obtenerNumero } from '~/utils/phone.number';
-import { getParticipante } from '~/firebase/services/participante.service';
+import { getParticipante } from '~/firebase/services/participante.firebase.service';
+import { Participante } from '~/mysql/entity/participante.entity';
 
 //export const welcomeFlow = addKeyword(EVENTS.WELCOME)
 export const welcomeFlow = addKeyword<BaileysProvider, IDatabase>(EVENTS.WELCOME)
@@ -15,7 +16,7 @@ export const welcomeFlow = addKeyword<BaileysProvider, IDatabase>(EVENTS.WELCOME
 
         const nro = obtenerNumero(ctx.from.includes('+') ? ctx.from : '+' + ctx.from);
 
-        const data = await getParticipante(nro);
+        const data = await getParticipante(nro) as Participante;
 
         let nombre = ctx.name;
 

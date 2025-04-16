@@ -1,0 +1,27 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: chatbot
+      MYSQL_USER: bot
+      MYSQL_PASSWORD: botpass
+    ports:
+      - '3306:3306'
+
+  builderbot:
+    build: .
+    restart: always
+    depends_on:
+      - mysql
+    ports:
+      - '3008:3008'
+    environment:
+      DB_HOST: mysql
+      DB_USER: bot
+      DB_PASSWORD: botpass
+      DB_NAME: chatbot
